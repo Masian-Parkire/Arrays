@@ -1,18 +1,17 @@
 fun main() {
-names()
+names("Anita","Bob", "Alice","Chris")
     countries()
     digits()
      facts("chair","table","wall")
 }
-fun names(){
-    var order  = arrayOf("Mercy","Ann" ,"Leila" ,"Kevin")
+fun names(tag1: String,tag2: String, tag3:String,tag4:String){
+    var order  = arrayOf(tag1,tag2,tag3,tag4)
     println(order.contentToString())
 
 }
 fun countries() {
     var cities = arrayOf("harare", "mumbai", "dodoma", "jakarta")
-    var grammatical = println(cities.map { it.capitalize() })
-    println(grammatical)
+   cities.forEach { cities-> println(cities.capitalize()) }
 }
 fun digits(){
     var numbers = arrayOf(32,17,4,213,78,43,90,31,3,73,11,158,62)
