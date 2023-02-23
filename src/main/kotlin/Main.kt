@@ -2,7 +2,7 @@ fun main() {
 names()
     countries()
     digits()
-    facts("chair","table","wall")
+     facts("chair","table","wall")
 }
 fun names(){
     var order  = arrayOf("Mercy","Ann" ,"Leila" ,"Kevin")
@@ -21,6 +21,7 @@ println(sum)
     println(numbers.indexOf(158))
     println(numbers.sortedArray().contentToString())
 }
-fun facts(nam1:String,nam2:String,nam3:String): Array<String>{
-    return arrayOf(nam1,nam2,nam3)
+fun facts(nam1:String,nam2:String,nam3:String): String{
+    var names = arrayOf(nam1,nam2,nam3)
+    return (names.contentToString())
 }
